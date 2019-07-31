@@ -1,4 +1,8 @@
 package com.easybills.repository;
 
-public interface IInventoryRepository {
+import com.easybills.entity.InventoryEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IInventoryRepository extends JpaRepository<InventoryEntity, Integer> {
+
 }

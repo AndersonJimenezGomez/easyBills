@@ -5,6 +5,8 @@ package com.easybills.entity;
 
 
 import com.easybills.domain.Role;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -19,7 +21,8 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="role")
-
+@AllArgsConstructor
+@NoArgsConstructor
 public class EmployeeEntity {
 
     @Id

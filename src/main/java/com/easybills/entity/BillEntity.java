@@ -2,12 +2,16 @@ package com.easybills.entity;
 
 
 import com.easybills.domain.Employee;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.GregorianCalendar;
 
 @Entity
 @Table(name = "bill")
+@AllArgsConstructor
+@NoArgsConstructor
 public class BillEntity {
 
     @Id
